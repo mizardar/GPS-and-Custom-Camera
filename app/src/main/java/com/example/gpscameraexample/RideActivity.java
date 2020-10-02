@@ -30,24 +30,24 @@ import java.util.TimerTask;
 public class RideActivity extends AppCompatActivity implements SurfaceHolder.Callback {
 
 
-    Camera camera;
-    SurfaceView surfaceView;
-    SurfaceHolder surfaceHolder;
-    boolean previewing = false;
-    Button btnRide;
-    long mTimerTime =18000000;
-    TextView txtTimer;
-    int timesec,timemin,timehr;
-    final Handler handler = new Handler();
-    Timer timer = new Timer();
-    Thread timerthread;
-    double lat,lng;
-    String fname;
-    int RideNo;
-    SharedPreferences mPref;
-    SharedPreferences.Editor mEditor;
-    String locationAddress;
-    TimerTask doAsynchronousTask;
+    private Camera camera;
+    private SurfaceView surfaceView;
+    private SurfaceHolder surfaceHolder;
+    private boolean previewing = false;
+    private Button btnRide;
+    private long mTimerTime =18000000;
+    private TextView txtTimer;
+    private int timesec,timemin,timehr;
+    private final Handler handler = new Handler();
+    private Timer timer = new Timer();
+    private Thread timerthread;
+    private double lat,lng;
+    private String fname;
+    private int RideNo;
+    private SharedPreferences mPref;
+    private SharedPreferences.Editor mEditor;
+    private String locationAddress;
+    private TimerTask doAsynchronousTask;
 
 
     @Override
